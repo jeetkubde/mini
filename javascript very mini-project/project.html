@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        body. {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PROJECT TASK</h1>
+    <br><br>
+    <div class="container">
+        <input id="name" placeholder=" name">
+        <button onclick="savedata()"> Add</button>
+    </div>
+    <br><br>
+    <div class="text">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+</body>
+<script>
+    // function addition(a, b) {
+    //     let k = a + b;
+    //     console.log(k)
+    // }
+    function savedata() {
+        var input = document.getElementById("name").value;
+        var listing = document.getElementById("list");
+        /*dynamic li element*/
+        const lichildren = document.createElement("li");
+        const textNode = document.createTextNode(input);
+        lichildren.appendChild(textNode)
+        /*end dynamic li element*/
+        listing.appendChild(lichildren)
+        console.log(input)
+    }
+
+</script>
+
+</html>

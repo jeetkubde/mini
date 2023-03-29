@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* padding: 0;
+            margin: 0; */
+            background-color: antiquewhite;
+
+        }
+
+        h1 {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>STUDENT LOGIN FORM</h1>
+    </div>
+    <div class="container">
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" placeholder="Enter Email"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="Password" id="Password" placeholder="Enter Password"><br><br>
+            <button type="submit" id="btn" onclick="validate()">LOGIN</button>
+        </form>
+    </div>
+</body>
+<script>
+    function validate()
+    {
+        let Email=document.getElementById("Email").value;
+        let Password=document.getElementById("Password").value;
+
+        if (Email==="jeet" && Password==="1234567") 
+        {
+            alert("login suessfully");
+        }
+        else 
+        {
+            alert("login Felid");
+        }
+    }
+</script>
+</html>
